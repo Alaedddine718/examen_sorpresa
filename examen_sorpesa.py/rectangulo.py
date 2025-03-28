@@ -1,7 +1,7 @@
 from punto import Punto
 
 class Rectangulo:
-    def _init_(self, punto1=Punto(), punto2=Punto()):
+    def __init__(self, punto1=Punto(), punto2=Punto()):  # Corregido el nombre del método
         self.punto1 = punto1
         self.punto2 = punto2
 
@@ -12,4 +12,4 @@ class Rectangulo:
         return abs(self.punto2.y - self.punto1.y)
 
     def area(self):
-        return self.base() * self.altura()
+        return self.base() * self.altura() 

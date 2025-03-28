@@ -1,11 +1,10 @@
 import math
-
 class Punto:
-    def _init_(self, x=0, y=0):
+    def __init__(self, x=0, y=0):
         self.x = x
         self.y = y
 
-    def _str_(self):
+    def __str__(self):
         return f"({self.x}, {self.y})"
 
     def cuadrante(self):
@@ -28,4 +27,4 @@ class Punto:
         return f"({p.x - self.x}, {p.y - self.y})"
 
     def distancia(self, p):
-        return math.sqrt((p.x - self.x) ** 2 + (p.y - self.y) ** 2)
+        return math.sqrt((p.x - self.x) ** 2 + (p.y - self.y) ** 2)
